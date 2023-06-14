@@ -1,0 +1,16 @@
+<?php
+$n = pathinfo($_SERVER['REDIRECT_URL'], PATHINFO_BASENAME);
+$f = __DIR__.'/'.$n;
+if (is_file($f)) {
+  $c = file_get_contents($f);
+  if ($_REQUEST['primaryColor']) {
+    $c = str_replace('--vjs-5centsCDN-skin--primary: #4fa83d;', "--vjs-5centsCDN-skin--primary: {$_REQUEST['primaryColor']};", $c);
+    $c = str_replace('--vjs-5centsCDN-skin--mainplayerhover: url("./assets/main-player-hover.svg");', "--vjs-5centsCDN-skin--mainplayerhover: url(\"./assets/main-player-hover.svg?fill=".urlencode($_REQUEST['primaryColor'])."\");", $c);
+  }
+  if ($_REQUEST['secondaryColor']) {
+    $c = str_replace('--vjs-5centsCDN-skin--secondary: #ffffff;', "--vjs-5centsCDN-skin--primary: {$_REQUEST['secondaryColor']};", $c);
+  }
+
+  header('Content-Type: text/css');
+  echo $c;
+}

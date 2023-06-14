@@ -1,0 +1,37 @@
+<VAST version="4.0">
+<Ad id="20012">
+<InLine>
+<AdSystem version="4.0">iabtechlab</AdSystem>
+<AdTitle> NonLinear Image </AdTitle>
+<Description>
+<![CDATA[ VAST 4.0 sample tag for Non Linear ad (i.e Overlay ad). Change the StaticResources to have a tag with your own content. Change NonLinear tag's parameters accordingly to view desired results. ]]>
+</Description>
+<Error>
+<![CDATA[ https://www.nuevodevel.com/nurvo/error ]]>
+</Error>
+<Impression id="Impression-ID">
+<![CDATA[ https://www.nuevodevel.com/nurvo/impression/Impression-ID ]]>
+</Impression>
+<Creatives>
+<Creative id="5270">
+<NonLinearAds>
+<NonLinear width="100%" height="auto" expandedWidth="450" recall="true" minSuggestedDuration="00:00:10" scalable="true" maintainAspectRatio="true">
+<HTMLResource>
+<![CDATA[ <div style="background:rgba(0,0,0,.5);color:#f0f0f0;text-align:left;padding:5px 10px;line-height:18px;"><div style="font-size:14px;font-weight:bold">Nonlinear Ad Titlte</div><div style="font-size:12px;font-weight:normal;">This is nonlinear ad based on simple HTML code.</div><div style="font-size:12px;font-weight:normal;color:#C0B675">nuevodevel.com</div> </div><div role="button" class="nonlinear-recall" style="font-size:24px;position:absolute;font-family:sans-serif;right:5px;top:5px;width:20px;height:20px;line-height:20px;color:#fff;text-align:center;background:#000;z-index:5" onclick="this.parentNode.style.display='none'">&times;</div> ]]>
+</HTMLResource>
+<NonLinearClickTracking>
+<![CDATA[ https://www.nuevodevel.com/nuevo/tracking/click ]]>
+</NonLinearClickTracking>
+<NonLinearClickThrough>
+<![CDATA[ https://www.nuevodevel.com/nuevo ]]>
+</NonLinearClickThrough>
+</NonLinear>
+</NonLinearAds>
+</Creative>
+</Creatives>
+<Description>
+<![CDATA[ VAST 4.0 sample tag for Non Linear ad (i.e Overlay ad). Change the StaticResources to have a tag with your own content. Change NonLinear tag's parameters accordingly to view desired results. ]]>
+</Description>
+</InLine>
+</Ad>
+</VAST>

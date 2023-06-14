@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tears Of Steel</title>
+  <link rel="stylesheet" href="./bundle.css" />
+  <link rel="stylesheet" href="./skins/skin4/main.css" id="player_skin" />
+  <link rel="stylesheet" href="./plugins/logo/videojs-logo.css">
+  <link rel="stylesheet" href="./plugins/resolution-switcher/videojs-resolution-switcher.css" />
+
+  <script defer src="./bundle.js"></script>
+  <script defer src="./plugins/logo/videojs-logo.min.js"></script>
+  <script defer src="./plugins/resolution-switcher/videojs-resolution-switcher.js"></script>
+  <script defer
+    src='https://player.5centscdn.com/5centscdn/plugins/videojs-settings-menu/videojs-settings-menu.js'></script>
+  <script defer src="./video.js"></script>
+</head>
+
+<body>
+  <video id="my-video" class="video-js vjs-5centsCDN-skin vjs-big-play-centered">
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+    </p>
+  </video>
+  <style>
+  :not(.vjs-has-started) .vjs-control-bar {
+    display: flex;
+  }
+  </style>
+</body>
+
+</html>

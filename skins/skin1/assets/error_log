@@ -1,0 +1,14 @@
+[21-Feb-2023 13:01:42 UTC] PHP Notice:  Undefined index: stroke in /home/cloudcdnhosting/public_html/cp2/player/5centscdn/skins/skin1/assets/index.php on line 9
+[21-Feb-2023 13:01:42 UTC] PHP Notice:  Undefined index: fill in /home/cloudcdnhosting/public_html/cp2/player/5centscdn/skins/skin1/assets/index.php on line 13
+[21-Feb-2023 13:02:37 UTC] PHP Notice:  Undefined index: stroke in /home/cloudcdnhosting/public_html/cp2/player/5centscdn/skins/skin1/assets/index.php on line 9
+[21-Feb-2023 13:02:37 UTC] PHP Notice:  Undefined index: fill in /home/cloudcdnhosting/public_html/cp2/player/5centscdn/skins/skin1/assets/index.php on line 13
+[21-Feb-2023 14:43:58 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/cloudcdnhosting/public_html/cp2/player/5centscdn/skins/skin1/assets/index.php on line 12
+[21-Feb-2023 14:44:01 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/cloudcdnhosting/public_html/cp2/player/5centscdn/skins/skin1/assets/index.php on line 12
+[21-Feb-2023 15:00:16 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function strock() in /home/cloudcdnhosting/public_html/cp2/player/5centscdn/skins/skin1/assets/index.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/cloudcdnhosting/public_html/cp2/player/5centscdn/skins/skin1/assets/index.php on line 11
+[21-Feb-2023 15:00:49 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function strock() in /home/cloudcdnhosting/public_html/cp2/player/5centscdn/skins/skin1/assets/index.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/cloudcdnhosting/public_html/cp2/player/5centscdn/skins/skin1/assets/index.php on line 11

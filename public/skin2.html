@@ -1,36 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Tears Of Steel</title>
-  <link rel="stylesheet" href="./bundle.css" />
-  <link rel="stylesheet" href="./skins/skin2/main.css" id="player_skin" />
-  <link rel="stylesheet" href="./plugins/logo/videojs-logo.css" />
-  <link rel="stylesheet" href="./plugins/resolution-switcher/videojs-resolution-switcher.css" />
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Videojs/Nuevo - Basic example</title>
 
-  <script defer src="./bundle.js"></script>
-  <script defer src="./plugins/logo/videojs-logo.min.js"></script>
-  <script defer src="./plugins/resolution-switcher/videojs-resolution-switcher.js"></script>
-  <script defer
-    src='https://player.5centscdn.com/5centscdn/plugins/videojs-settings-menu/videojs-settings-menu.js'></script>
-  <script defer src="./video.js"></script>
+<!-- <link href="http://localhost/5player/player-5cents/5centscdn/bundle.css" rel="stylesheet" type="text/css" /> -->
+<link href="./videojs.css" rel="stylesheet" type="text/css" />
+<link href="../plugins/ima/ima.min.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" href="../skins/skin2/main.css" id="player_skin" />
+
+
+
+
+
+<!--Load Ima SDK Loader -->
+<script src="//imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
+
+<script src="./video.min.js"></script>
+<!-- ima -->
+<script src="../plugins/ima/videojs.ima.min.js"></script>
+<script src="../plugins/videojs-contrib-ads.min.js"></script>
+<!-- //ima -->
+<script src="../plugins/vast.vpaid.min.js"></script>
+<script src="./nuevo.min.js"></script>
+<script src="../plugins/videojs.hotkeys.min.js"></script>
+<script  src="../plugins/videojs.offline.js"></script>
+<script src="../plugins/videojs.thumbnails.js"></script>
+<script src="../plugins/videojs-chromecast.min.js"></script>
+<script src="../plugins/videojs.airplay.js"></script>
+<!-- ads -->
+<!-- <script src="../plugins/videojs.dai.js"></script> -->
+<script src="../plugins/vastpro.js"></script>
 </head>
 
 <body>
-  <video id="my-video" class="video-js vjs-5centsCDN-skin vjs-big-play-centered">
-    <p class="vjs-no-js">
-      To view this video please enable JavaScript, and consider upgrading to a
-      web browser that
-      <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-    </p>
-  </video>
-  <style>
-  :not(.vjs-has-started) .vjs-control-bar {
-    display: flex;
-  }
-  </style>
-</body>
 
+	<video id="my-video" class="video-js vjs-5centsCDN-skin vjs-big-play-centered">
+		<!-- <track kind="chapters" src="../assets/chapter.vtt" srclang="en"> -->
+		<p class="vjs-no-js">
+			To view this video please enable JavaScript, and consider upgrading to a
+			web browser that
+			<a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+		</p>
+	</video>
+	<script  src="../src/player.js"></script>
+	<script  src="../src/vjs.config.js"></script>
+
+</div>
+
+<!-- <div class="vjs-companion" style="width: 100%"></div>
+<div class="vjs-companion" style="width: 100%"></div>
+<div class="vjs-companion" style="width: 100%"></div>
+<div class="vjs-companion" style="width: 100%"></div> -->
+<div id="ac_231" style="width: 100%"></div>
+<div id="3214" style="width: 100%"></div>
+</body>
 </html>

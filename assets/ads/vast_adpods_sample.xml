@@ -23,10 +23,10 @@
 <Duration>00:00:25</Duration>
 <MediaFiles>
 <MediaFile id="22" delivery="progressive" type="video/mp4" bitrate="2840" width="1280" height="720" minBitrate="1550" maxBitrate="2850" scalable="1" maintainAspectRatio="1" codec="0">
-<![CDATA[ https://opencdn.b-cdn.net/pub/5.0/media/preroll_coffe_720.mp4 ]]>
+<![CDATA[ https://push-3094.5centscdn.com/pexels-mikhail-nilov-6964235.mp4 ]]>
 </MediaFile>
 <MediaFile id="23" delivery="progressive" type="video/mp4" bitrate="1550" width="854" height="480" minBitrate="100" maxBitrate="1550" scalable="1" maintainAspectRatio="1" codec="0">
-<![CDATA[ https://opencdn.b-cdn.net/pub/5.0/media/preroll_coffe_480.mp4 ]]>
+<![CDATA[ https://push-3094.5centscdn.com/pexels-mikhail-nilov-6964235.mp4 ]]>
 </MediaFile>
 </MediaFiles>
 <VideoClicks>
@@ -64,10 +64,10 @@
 <Duration>00:00:25</Duration>
 <MediaFiles>
 <MediaFile id="22" delivery="progressive" type="video/mp4" bitrate="2000" width="1280" height="720" minBitrate="1500" maxBitrate="2500" scalable="1" maintainAspectRatio="1" codec="0">
-<![CDATA[ https://opencdn.b-cdn.net/pub/5.0/media/coffe2_720.mp4 ]]>
+<![CDATA[ https://push-3094.5centscdn.com/pexels-mikhail-nilov-6964235.mp4 ]]>
 </MediaFile>
 <MediaFile id="23" delivery="progressive" type="video/mp4" bitrate="1000" width="854" height="480" minBitrate="700" maxBitrate="1500" scalable="1" maintainAspectRatio="1" codec="0">
-<![CDATA[ https://opencdn.b-cdn.net/pub/5.0/media/coffe2_480.mp4 ]]>
+<![CDATA[ https://push-3094.5centscdn.com/pexels-mikhail-nilov-6964235.mp4 ]]>
 </MediaFile>
 </MediaFiles>
 <VideoClicks>

@@ -1294,28 +1294,28 @@ body.vjs-full-window {
     left: 50%;
     background-color: rgba(0,0,0,.45);
     cursor: pointer;
-    line-height: 0;
-    width: 0;
-    height: 0;
+    line-height: 60px;
+    width: 100px;
+    height: 60px;
     position: absolute;
     padding: 0;
     opacity: 1;
-    /* border: 1.5px solid #fff;
-	-webkit-border-radius: 6px; */
-    /* border-radius: 6px; */
+    border: 1.5px solid #fff;
+	-webkit-border-radius: 6px;
+    border-radius: 6px;
     margin-left: -50px;
     margin-top: -30px;
 }
 
-/* .video-js .vjs-big-play-button:hover {
+.video-js .vjs-big-play-button:hover {
 	background-color:#00b1ff
-} */
-/* .video-js .vjs-big-play-button .vjs-icon-placeholder:before {
+}
+.video-js .vjs-big-play-button .vjs-icon-placeholder:before {
 	font-family:nuevo;
 	content: "\f101";
 	font-size:50px;
 	margin-left:5px;
-} */
+}
 .vjs-touch-active .vjs-big-play-button .vjs-icon-placeholder:before {
 	font-size:80px;
 }
@@ -2655,7 +2655,7 @@ body.vjs-full-window {
 }
 
  .vjs-has-mouse .vjs-button:hover {
-    background-color: #00b1ff;
+    /* background-color: #00b1ff; */
 }
  .vjs-has-mouse .vjs-chromecast-button:hover {
 	background-color:transparent
@@ -4022,8 +4022,8 @@ clearfix::before, .clearfix::after {
 
 @media screen and (orientation: landscape) {
     .video-js {
-        width:98vw;
-        height: 98vh
+        width:100vw;
+        height: 100vh
     }
 }
 

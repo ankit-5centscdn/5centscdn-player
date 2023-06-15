@@ -72,7 +72,9 @@ class FiveCentsCDNPlayer {
 				if (this.nuevo.offline) this.playerInstance.offline(this.nuevo.offline);
 				if (this.nuevo.hotkeys) this.playerInstance.hotkeys(this.nuevo.hotkeys);
 				if (this.nuevo.chapters) this.playerInstance.on('loadeddata', function(){ this.playerInstance.loadTracks(chapters); });
-				 this.playerInstance.chromecast();
+				 // this.playerInstance.chromecast();
+
+         this.playerInstance.chromecast({metaTitle:"Chromecast demo", metaSubtitle:"Have fun casting your videos!", metaThumbnail:"//nvd.nuevodevel.com/media/democr.jpg" });
 				 this.playerInstance.airplay();
 
 

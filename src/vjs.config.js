@@ -72,6 +72,12 @@ if (currentSkin === 'skin5') {
 }
 
 
+
+
+
+
+
+
 window.addEventListener("DOMContentLoaded", (event) => {
 	let option = {
 			autoplay : false,
@@ -80,7 +86,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
 	    hash_id: "5jlu9ndsy2y7a664",
 
 	    sources: [
-
 	      {
 	        // src: "https://932y45x3djv8-hls-live.cloudcdnhosting.com/ffffgjjjjjjjjjjjjdddddseerrvvbng/b04c0df60a39557ffe023e06fce5eb9b.sdp/playlist.m3u8",
 	        src: "https://push-2501.5centscdn.com/TearsofSteel.mp4",
@@ -141,6 +146,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
 		let nuevo = {
 			nuevoSetting: {
+				title: "Nuevo plugin for VideoJs Player",
 				contextMenu: "default",
 
 		  	// Title Info Overlay
@@ -235,14 +241,14 @@ window.addEventListener("DOMContentLoaded", (event) => {
 				seekStep: 5
 			},
 
-			// chromecast
-			chromecast: {
-				// button: "controlbar", // By default chromecast button appears in top-left corner.
-				// overlayButton:false,
-				metaTitle: 'video title',
-				metaSubtitle: 'video subtitle',
-				// metaThumbnail: "//path-to-thumbnail.jpg", // optional
-			 },
+			// // chromecast
+			// chromecast: {
+			// 	// button: "controlbar", // By default chromecast button appears in top-left corner.
+			// 	// overlayButton:false,
+			// 	metaTitle: 'video title',
+			// 	metaSubtitle: 'video subtitle',
+			// 	// metaThumbnail: "//path-to-thumbnail.jpg", // optional
+			//  },
 
 
 		}
@@ -250,7 +256,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 		let ads = {
 			// vroll_ad_option: [ // Prerroll, Midroll, Postroll vroll ads
 			// 	{
-			// 		src: "//opencdn.b-cdn.net/video/preroll.mp4",
+			// 		src: "https://push-3094.5centscdn.com/pexels-mikhail-nilov-6964235.mp4",
 			// 		type: "video/mp4",
 			// 		href: "https://url-to-go-on-click",
 			// 		offset: '0',  //must be '0' for preroll video
@@ -258,7 +264,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 			// 		id: '1' //useful for tracking roll video
 			// 	},
 			// 	{
-			// 		src: "//opencdn.b-cdn.net/video/midroll1.mp4",
+			// 		src: "https://push-3094.5centscdn.com/pexels-mikhail-nilov-6962343.mp4",
 			// 		type: "video/mp4",
 			// 		href: "https://url-to-go-on-click",
 			// 		offset: '10', //midroll starts at 00:10
@@ -266,7 +272,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 			// 		id: '2'
 			// 	},
 			// 	{
-			// 		src: "//opencdn.b-cdn.net/video/midroll2.mp4",
+			// 		src: "https://push-3094.5centscdn.com/indian%20guy%20laughing%20meme%20%28original%29.mp4",
 			// 		type: "video/mp4",
 			// 		href: "https://url-to-go-on-click",
 			// 		offset: '50%', //midroll starts at half of video
@@ -275,7 +281,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 			// 	},
 			// 	{
 			// 		// Note:- Postroll video starts playing when the main video finished. It's obvious that it will not play for live streams
-			// 		src: "//opencdn.b-cdn.net/video/postroll.mp4",
+			// 		src: "https://push-3094.5centscdn.com/pexels-mikhail-nilov-6964235.mp4",
 			// 		type: "video/mp4",
 			// 		href: "https://url-to-go-on-click",
 			// 		offset: '100%', //must be '100%' for postroll video
@@ -296,12 +302,12 @@ window.addEventListener("DOMContentLoaded", (event) => {
 			// 	* When you create an ad tag waterfall, you assign an array of ad tags to a single ad break.
 			// 	*/
 			// 	tagURL: [
-			// 		// "../assets/ads/vmap_ad_sample.xml", // VMAP ad
-			// 		"../assets/ads/vast_adpods_sample.xml", // Ad pods
+			// 		// "../assets/ads/vast_adpods_sample.xml", // Ad pods
 			// 		// "../assets/ads/icon_sample.xml", // icon Ad
 			// 		// "../assets/ads/companion_sample.xml", // companion Ad
 			// 		// "../assets/ads/vast_clickthrough_sample.xml", // clickthrough Ad
-			// 		// "../assets/ads/nonlinear_sample.xml" // nonlinear Ad
+			// 		// "../assets/ads/nonlinear_sample.xml", // nonlinear Ad
+			// 		// "../assets/ads/vmap_ad_sample.xml", // VMAP ad
 			// 	],
 			// }
 

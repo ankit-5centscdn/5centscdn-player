@@ -273,12 +273,12 @@ body {
 }
 
 .vjs-5centsCDN-skin .vjs-control-bar .vjs-play-control {
-  transform: scale(1);
+  transform: scale(0.4);
   transition-duration: 0.5s;
 }
 
 .vjs-5centsCDN-skin .vjs-control-bar .vjs-play-control:hover {
-  transform: scale(1.5);
+  transform: scale(0.8);
 
 }
 
@@ -389,6 +389,7 @@ body {
   position: absolute;
   width: 100%;
   top: -25px;
+  margin: 0!important;
 }
 
 .vjs-5centsCDN-skin .vjs-progress-control .vjs-progress-holder {
@@ -820,4 +821,13 @@ body {
 
 .vjs-control-bar .vjs-picture-in-picture-control {
   order: 90;
+}
+
+
+/*****************************/
+
+.video-js .vjs-big-play-button .vjs-icon-placeholder:before{
+  position: absolute;
+  left: -2.8rem;
+  top: -1.5rem;
 }

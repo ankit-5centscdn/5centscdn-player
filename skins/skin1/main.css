@@ -10,7 +10,7 @@ body {
 }
 
 .vjs-5centsCDN-skin .vjs-play-progress {
-  background-color: var(--vjs-5centsCDN-skin--primary);
+  background-color: var(--vjs-5centsCDN-skin--primary)!important;
 }
 
 .vjs-5centsCDN-skin .vjs-volume-level {
@@ -20,7 +20,7 @@ body {
 .vjs-5centsCDN-skin .vjs-control-bar {
   background: none;
   background-image: linear-gradient(0deg, #000, transparent);
-  height: 35px;
+  height: 40px;
 }
 
 .vjs-5centsCDN-skin .vjs-volume-vertical {
@@ -605,4 +605,51 @@ body {
 
 .vjs-settings-menu-mobile {
   display: none;
+}
+
+
+
+
+
+
+
+
+/*****************************************/
+
+
+.video-js .vjs-big-play-button .vjs-icon-placeholder:before, .video-js .vjs-modal-dialog, .vjs-button>.vjs-icon-placeholder:before, .vjs-modal-dialog .vjs-modal-dialog-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-js .vjs-big-play-button .vjs-icon-placeholder:before {
+  top: -0.5rem;
+  left: 0.5rem;
+}
+
+
+.vjs-5centsCDN-skin .vjs-progress-control .vjs-slider:before {
+    background-color: #73859f;
+    background-color: rgba(115,133,159,.5);
+}
+
+
+/* progress bar */
+.video-js .vjs-slider{
+  position: relative;
+  margin: 0 0.45em 0 0.45em;
+}
+
+/* playback rate button */
+.vjs-playback-rate .vjs-playback-rate-value,
+.vjs-playback-rate>.vjs-menu-button {
+  position: absolute !important;
+  top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+
 }

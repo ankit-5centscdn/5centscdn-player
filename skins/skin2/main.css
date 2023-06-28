@@ -11,7 +11,7 @@ body {
 }
 
 .vjs-5centsCDN-skin .vjs-play-progress {
-  background-color: var(--vjs-5centsCDN-skin--primary);
+  background-color: var(--vjs-5centsCDN-skin--primary)!important;
 }
 
 .vjs-5centsCDN-skin .vjs-volume-level {
@@ -786,4 +786,28 @@ body {
   .vjs-5centsCDN-skin .vjs-cv-control {
     display: none;
   }
+}
+
+/******************************/
+.video-js .vjs-big-play-button .vjs-icon-placeholder:before{
+  position: absolute;
+  left: -1.5rem;
+  top: -2.9rem;
+}
+
+.vjs-button>.vjs-icon-placeholder:before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+height: 100%;
+}
+
+
+.video-js .vjs-progress-control{
+  margin: 0;
+}
+
+.vjs-1600 .vjs-marker {
+  top: 16px;
 }

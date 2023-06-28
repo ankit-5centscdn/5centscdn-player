@@ -32,12 +32,12 @@ var buttonOrder = [];
 var buttonMenu = [];
 var volumeInline = false;
 if (currentSkin === 'skin5') {
-  buttonOrder = ["PlayToggle", "currentTimeDisplay", "timeDivider", "progressControl", "durationDisplay",
+	buttonOrder = ["PlayToggle", "currentTimeDisplay", "timeDivider", "progressControl", "durationDisplay",
     "volumePanel", "liveDisplay", "seekToLive", "remainingTimeDisplay", "customControlSpacer", 'qualitySelector',
     "playbackRateMenuButton", "QualityButton", "chaptersButton", "descriptionsButton", "subsCapsButton",
     "audioTrackButton", "pictureInPictureToggle", "fullscreenToggle"
   ];
-  buttonMenu = ["QualityButton", "PlaybackRateMenuButton",];
+
   volumeInline = false;
 } else if (currentSkin === 'skin4') {
   buttonOrder = ["PlayToggle", "volumePanel", "timeDivider", "durationDisplay", "progressControl", "liveDisplay",
@@ -77,18 +77,29 @@ if (currentSkin === 'skin5') {
 
 
 
-
 window.addEventListener("DOMContentLoaded", (event) => {
 	let option = {
+			techOrder: ['html5'],
 			autoplay : false,
 	    muted: false,
+			show_cv: true,
+			title: "Tears Of Steel",
 	    poster: poster,
 	    hash_id: "5jlu9ndsy2y7a664",
+			// playbackRates: [ 0.5, 0.75, 1, 1.25, 1.5],
+
+			controlBar: {
+				volumePanel: {
+					inline: volumeInline,
+				},
+				children: buttonOrder,
+			},
 
 	    sources: [
 	      {
-	        // src: "https://932y45x3djv8-hls-live.cloudcdnhosting.com/ffffgjjjjjjjjjjjjdddddseerrvvbng/b04c0df60a39557ffe023e06fce5eb9b.sdp/playlist.m3u8",
+	        // src: "https://j7md5ep4drwv-hls-live.5centscdn.com/test/9ec4c0afd450ceac7adb81c3bcfc9732.sdp/playlist_dvr.m3u8",
 	        src: "https://push-2501.5centscdn.com/TearsofSteel.mp4",
+	        // type:"application/x-mpegURL",
 	        type: "video/mp4",
 	        res: "1080",
 	        label: "1080p",
@@ -146,8 +157,13 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
 		let nuevo = {
 			nuevoSetting: {
-				title: "Nuevo plugin for VideoJs Player",
-				contextMenu: "default",
+				title: "5centscdn player",
+
+
+				contextMenu: true,// default, false
+				contextUrl: 'https://www.wikipedia.com',
+				contextText: '5centsCDN Player 1.0.0 (Beta)',
+				contextIcon: '//www.wikipedia.org/static/favicon/wikipedia.ico',
 
 		  	// Title Info Overlay
 				/**
@@ -163,24 +179,28 @@ window.addEventListener("DOMContentLoaded", (event) => {
 				infoDescription: "This is video description example text",
 
 
-			  // logo
-		  	logotitle: "Nuevo plugin for Videojs",
-				logo: "http://localhost/5player/videojs8/examples/assets/images/logo.png",
-				logoposition: "RT", // options: Rt, LT, LB
-				logourl: "https://www.nuevodevel.com/nuevo/",
-				//logomin: true, // hide logo while playing (true)
-				//logocontrolbar: "../examples/assets/images/logo2.png", // Controlbar logo
-				// logo end
+			  // // logo
+		  	// logotitle: "Nuevo plugin for Videojs",
+				// logo: "http://localhost/5player/videojs8/examples/assets/images/logo.png",
+				// logoposition: "RT", // options: Rt, LT, LB
+				// logourl: "https://www.nuevodevel.com/nuevo/",
+				// //logomin: true, // hide logo while playing (true)
+				// //logocontrolbar: "../examples/assets/images/logo2.png", // Controlbar logo
+				// // logo end
 
 
 				related: related_videos, // related video
 
 
-				startTime:33, // Video start time position
+				startTime:0, // Video start time position
+
+				pipButton: true,
+				ccButton: true,
 
 
-				buttonForward: true, // Rewind Button
-				// rewindforward:20 // Rewind Button
+				buttonForward: true, // Rewind Button default: true
+				rewindforward:10, // Rewind Button/
+				// buttonRewind: true,
 
 
 				// video zoom
@@ -189,14 +209,21 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
 
 				// quality
+				hdicon : false,
 				settingsButton : true,
 				relatedMenu : true,
 				shareMenu : true,
 				rateMenu : true,
 				zoomMenu : true,
-				qualityMenu: true,
+				// qualityMenu: true,
 				controlbar : true,
-				captions: true,
+
+
+				captions: false,
+
+
+				// tooltips: false, // set false to disable button tooltips in control bar
+
 
 				/*
 				* If you prefer not to show chapter markers over progress bar chapterMarkers to false.
@@ -303,19 +330,19 @@ window.addEventListener("DOMContentLoaded", (event) => {
 			// 	*/
 			// 	tagURL: [
 			// 		// "../assets/ads/vast_adpods_sample.xml", // Ad pods
-			// 		// "../assets/ads/icon_sample.xml", // icon Ad
-			// 		// "../assets/ads/companion_sample.xml", // companion Ad
+			// 		"../assets/ads/icon_sample.xml", // icon Ad
+			// 		"../assets/ads/companion_sample.xml", // companion Ad
 			// 		// "../assets/ads/vast_clickthrough_sample.xml", // clickthrough Ad
 			// 		// "../assets/ads/nonlinear_sample.xml", // nonlinear Ad
 			// 		// "../assets/ads/vmap_ad_sample.xml", // VMAP ad
 			// 	],
+			//
 			// }
 
 
 		};
 
 		nuevo.ads = ads;
-
 
   player = new FiveCentsCDNPlayer("my-video", option, nuevo, function () {
     var vjsPlayer5centsCDN = this;
@@ -355,6 +382,104 @@ window.addEventListener("DOMContentLoaded", (event) => {
 		});
 
 
+		//
+		// vjsPlayer5centsCDN.ready(function() {
+		// 	this.controlBar.show(); // Show the control bar
+		// });
+
+
+		document.getElementsByClassName("vjs-picture-in-picture-control")[0].style.display = (pip == '1') ? 'block' : 'none';
+
+		/* social share section */
+
+		if (currentSkin === 'skin4' || currentSkin == 'skin1') {
+			var shareButton = this.controlBar.addChild("button", {
+				text: "Share",
+				children: {
+					buttonChildExample: {
+						buttonChildOption: true,
+					},
+				},
+				clickHandler: function (event) {
+					vjsPlayer5centsCDN.share();
+				}
+			})
+			shareButton.addClass("vjs-social-share");
+
+		}
+
+
+		// shareEvent = () => {
+		// 	var sharable_url = window.location.href;
+		// 	var fivecents_sharelink_facebook = "https://www.facebook.com/sharer.php?u=" + sharable_url;
+		// 	var fivecents_sharelink_google = "http://plus.google.com/share?url=" + sharable_url;
+		// 	var fivecents_sharelink_linkedin = "https://www.linkedin.com/shareArticle?&url=" +
+		// 		sharable_url;
+		// 	var fivecents_sharelink_twitter = "https://twitter.com/intent/tweet?url=" + sharable_url;
+		// 	var fivecents_sharelink_pinterest = "https://in.pinterest.com/pin/create/button/?url=" +
+		// 		sharable_url;
+		// 	var share_modal_content = `
+		// 				<div class="vjs-5centscdn-share">
+		// 					<p class="vjs-share-title">Copy the link to share</p>
+		// 					<input id="share_link_save_to_clipboard_5centscdn" value="${sharable_url}" class="share-url-field" type="text"
+		// 						disabled />
+		// 					<span id="share_url_copied_popup">copied</span>
+		// 					<div class="vjs-share-group-button">
+		// 						<button id="share_clipboard_5centscdn" class=" share-button vjs-copy-url-button"><span
+		// 								class="icon"></span></button>
+		// 						<button onClick="return window.open ('${fivecents_sharelink_facebook}');"
+		// 							class=" share-button vjs-facebook-share"><span class="icon"></span></button>
+		// 						<button onClick="return window.open ('${fivecents_sharelink_google}'); "
+		// 							class="share-button vjs-google-share"><span class="icon"></span></button>
+		// 						<button onClick="return window.open ('${fivecents_sharelink_linkedin}'); "
+		// 							class="share-button vjs-linkedin-share"><span class="icon"></span></button>
+		// 						<button onClick="return window.open ('${fivecents_sharelink_twitter}'); "
+		// 							class="share-button vjs-twitter-share"><span class="icon"></span></button>
+		// 						<button onClick="return window.open ('${fivecents_sharelink_pinterest}'); "
+		// 							class="share-button vjs-pinterest-share"><span class="icon"></span></button>
+		// 					</div>
+		// 				</div>
+		// 	 `;
+		//
+		// 	var contentEl = document.createElement("div");
+		// 	contentEl.innerHTML = share_modal_content;
+		// 	var shareModal = vjsPlayer5centsCDN.createModal(contentEl);
+		// 	shareModal.addClass("vjs-5centscdn-share-modal");
+		// 	vjsPlayer5centsCDN.pause();
+		// 	shareModal.on("modalclose", function () {
+		// 		vjsPlayer5centsCDN.play();
+		// 	});
+		//
+		// 	document
+		// 		.getElementById("share_clipboard_5centscdn")
+		// 		.addEventListener("click", function () {
+		// 			var copyText = document.getElementById("share_link_save_to_clipboard_5centscdn");
+		//
+		// 			copyText.select();
+		// 			copyText.setSelectionRange(0, 99999);
+		// 			/* For mobile devices */
+		// 			navigator.clipboard.writeText(copyText.value);
+		// 			document.getElementById("share_url_copied_popup").style.display = "block";
+		// 			setTimeout(function () {
+		// 				document.getElementById("share_url_copied_popup").style.display = "none";
+		// 			}, 500);
+		// 		}, false);
+		// }
+
+
+
+
   });
 
+
+
+
 });
+
+
+
+// (function () {
+//
+//   if (parent && parent.redrawiFrame) parent.redrawiFrame()
+//
+// })();

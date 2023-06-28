@@ -1,12 +1,900 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
 
-    <iframe src="./skin5.html" style="width:40rem;height:22.5rem;margin-left:4rem;"></iframe>
+<!DOCTYPE html>
+<!--[if lt IE 7]>  <html class="lt-ie7"> <![endif]-->
+<!--[if IE 7]>     <html class="lt-ie8"> <![endif]-->
+<!--[if IE 8]>     <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Dashboard - CloudCDNHosting</title>
+
+  <base href="https://cp2.cloudcdnhosting.com/" />
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="icon" type="image/png" href="assets/img/logo.png">
+  <!-- build:css assets/css/style.css -->
+  <!-- nanoScroller -->
+  <link rel="stylesheet" type="text/css" href="/templates/cdnneon/assets/nanoScroller/nanoscroller.css" />
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" type="text/css" href="/templates/cdnneon/assets/font-awesome/css/font-awesome.min.css" />
+  <link href="/assets/css/fontawesome-all.min.css" rel="stylesheet">
+
+  <!-- Material Design Icons -->
+  <link rel="stylesheet" type="text/css" href="/templates/cdnneon/assets/material-design-icons/css/material-design-icons.min.css" />
+
+  <!-- IonIcons -->
+  <link rel="stylesheet" type="text/css" href="/templates/cdnneon/assets/ionicons/css/ionicons.min.css" />
+
+  <!-- WeatherIcons -->
+  <link rel="stylesheet" type="text/css" href="/templates/cdnneon/assets/weatherIcons/css/weather-icons.min.css" />
+
+  <!-- NProgress -->
+  <link rel="stylesheet" type="text/css" href="/templates/cdnneon/assets/nprogress/nprogress.css" />
+  <!-- growl -->
+  <link rel="stylesheet" type="text/css" href="/templates/cdnneon/assets/growl/css/jquery.growl.css" />
+
+    <!-- spectrum -->
+  <link rel="stylesheet" type="text/css" href="/templates/cdnneon/assets/spectrum/spectrum.css" />
+
+
+  <!-- Main -->
+  <link rel="stylesheet" type="text/css" href="/templates/cdnneon/assets/_con/css/_con.5.css?ver=f372d09082beb5f9ef2074036ea11c95" />
+  <!-- endbuild -->
+
+  <!-- jQuery -->
+  <script src="/templates/cdnneon/assets/jquery/jquery.min.js"></script>
+
+  <!--[if lt IE 9]>
+    <script src="/templates/cdnneon/assets/html5shiv/html5shiv.min.js"></script>
+  <![endif]-->
+
+
+  <style>
+    aside.yaybar ul li i.material-icons {margin-bottom: 5px;}
+    .video-js.vjs-hls-quality-selector{display:block}
+    .vjs-menu .vjs-menu-content{max-height:20em !important;}
+    .sidebar-collapsed .lbltxt {display: none !important;}
+  </style>
+
+
+  <!-- add neon nav bar/sidebar css here -->
+
+  <link rel="stylesheet" type="text/css" href="/templates/cdnneon/assets/neon/custom.css?ver=f372d09082beb5f9ef2074036ea11c95" />
+  <link rel="stylesheet" type="text/css" href="/override.css?ver=f372d09082beb5f9ef2074036ea11c95" />
+
+  <link rel="stylesheet" type="text/css" href="/templates/cdnneon/assets/css/font-icons/entypo/css/entypo.css">
+  <link rel="stylesheet" href="https://player.cloudcdnhosting.com/videojs/7.7.6/video-js.min.css" crossorigin="anonymous">
+
+  <script src="https://player.cloudcdnhosting.com/videojs/ie8/1.1.2/videojs-ie8.min.js"></script>
+</head>
+
+<body>
+
+
+  <div class="page-container">
+
+
+
+<!-- Main Content -->
+
+
+<div class="card-panel">
+  <div>
+    <h4 style="width: 70%; display: inline-block;" class="light">
+      #261
+      <small>hsl</small>
+      <small>(hash: laq6vxbodpk7)</small>
+    </h4>
+    <!-- <a href="/dashboard/4/players/5centscdn/skins" class="pull-right" style="margin: 0.8rem 0 0 0;">
+      <i class="fa fa-chevron-left"></i>
+      Go Back
+    </a> -->
+  </div>
+  <div class="row">
+    <div class="col s6">
+      <form action="/dashboard/4/players/5centscdn/skins/261" method="post">
+<input type="hidden" name="token" value="16309d410e47fae20f1f806fa19dcc76f3d7fb93" />
+      <div class="row">
+        <div class="col s6">
+          <div class="input-field">
+            <label for="name" class="active">Skin Name</label>
+            <input type="text" id="name" name="name" value="hsl" required="">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <p>Player Setup</p>
+        <div class="col s6">
+          <label style="line-height: 35px;">Show skin on player initialize</label>
+          <p class="switch" style="display: inline;float:right;margin-top: unset;">
+            <label>
+              <input type="checkbox" name="meta[showskinoninit]" value="1" >
+              <span class="lever"></span>
+            </label>
+          </p>
+        </div>
+        <div class="col s6">
+          <label style="line-height: 35px;">Show Picture-in-Picture button</label>
+          <p class="switch" style="display: inline;float:right;margin-top: unset;">
+            <label>
+              <input type="checkbox" id="showpip" name="meta[showpip]" value="1" >
+              <span class="lever"></span>
+            </label>
+          </p>
+        </div>
+        <div class="col s6">
+          <label style="line-height: 35px;">AutoPlay on start</label>
+          <p class="switch" style="display: inline;float:right;margin-top: unset;">
+            <label>
+              <input type="checkbox" id="autoplay" name="meta[autoplay]" value="1" >
+              <span class="lever"></span>
+            </label>
+          </p>
+        </div>
+        <div class="col s6">
+          <label style="line-height: 35px;">Muted on start</label>
+          <p class="switch" style="display: inline;float:right;margin-top: unset;">
+            <label>
+              <input type="checkbox" id="muted" name="meta[muted]" value="1" >
+              <span class="lever"></span>
+            </label>
+          </p>
+        </div>
+        <div class="col s6">
+          <label style="line-height: 35px;">Show Concurrent Viewers</label>
+          <p class="switch" style="display: inline;float:right;margin-top: unset;">
+            <label>
+              <input type="checkbox" id="showcv" name="meta[showcv]" value="1" checked>
+              <span class="lever"></span>
+            </label>
+          </p>
+        </div>
+        <!-- <div class="col s6">
+          <label style="line-height: 35px;">Show CC Button</label>
+          <p class="switch" style="display: inline;float:right;margin-top: unset;">
+            <label>
+              <input type="checkbox" id="showcv" name="meta[ccButton]" value="1" >
+              <span class="lever"></span>
+            </label>
+          </p>
+        </div> -->
+        <div class="col s6">
+          <label style="line-height: 35px;">Zoom option</label>
+          <p class="switch" style="display: inline;float:right;margin-top: unset;">
+            <label>
+              <input type="checkbox" id="zoomMenu" name="meta[zoomMenu]" value="1" >
+              <span class="lever"></span>
+            </label>
+          </p>
+        </div>
+        <div class="col s6" style="clear: both">
+          <label style="line-height: 35px;">Start Timer <small>(sec)</small></label>
+            <label>
+              <input type="number" id="startTime" name="meta[startTimer]">
+            </label>
+        </div>
+
+        <div class="col s6">
+          <label style="line-height: 35px;">Rewind/Forward Buttons</label>
+          <p class="switch" style="display: inline;float:right;margin-top: unset;">
+            <label>
+              <input type="checkbox" id="showcv" name="meta[ccButton]" value="1" >
+              <span class="lever"></span>
+            </label>
+          </p>
+        </div>
+
+        <div class="col s6" style="clear: both">
+          <label style="line-height: 35px;">Context Menu</label>
+          <p class="switch" style="display: inline;float:right;margin-top: unset;">
+            <label>
+              <input type="checkbox" id="contextMenu" name="meta[contextMenu]" value="1" >
+              <span class="lever"></span>
+            </label>
+          </p>
+          <div id="contextMenuOptons" style="display: none;">
+            <div class="row" >
+              <div class="col s6">
+                <label style="line-height: 35px;">Context Url</label>
+                  <label>
+                    <input type="number" id="contextUrl" name="meta[contextUrl]">
+                  </label>
+              </div>
+              <div class="col s6">
+                <label style="line-height: 35px;">Context Text</label>
+                  <label>
+                    <input type="number" id="contextText" name="meta[contextText]">
+                  </label>
+              </div>
+              <div class="col s6">
+                <label style="line-height: 35px;">Context Text</label>
+                  <label>
+                    <input type="file" id="contextIcon" name="meta[contextIcon]">
+                  </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s6" style="clear: both">
+          <label style="line-height: 35px;">Title Info Overlay</label>
+          <p class="switch" style="display: inline;float:right;margin-top: unset;">
+            <label>
+              <input type="checkbox" id="videoInfo" name="meta[videoInfo]" value="1" >
+              <span class="lever"></span>
+            </label>
+          </p>
+          <div id="videoInfoOptons" style="display: none;">
+            <div class="row" >
+              <div class="col s6">
+                <label style="line-height: 35px;">Info Title</label>
+                  <label>
+                    <input type="text" id="infoTitle" name="meta[infoTitle]">
+                  </label>
+              </div>
+              <div class="col s6">
+                <label style="line-height: 35px;">Info Description <small>(optional)</small></label>
+                  <label>
+                    <input type="number" id="infoDescription" name="meta[infoDescription]">
+                  </label>
+              </div>
+              <div class="col s6">
+                <label style="line-height: 35px;">Info Description</label>
+                  <label>
+                    <input type="text" id="infoDescription" name="meta[infoDescription]">
+                  </label>
+              </div>
+              <div class="col s6">
+                <label style="line-height: 35px;">Info Icon <small>(optional)</small></label>
+                  <label>
+                    <input type="file" id="infoIcon" name="meta[infoIcon]">
+                  </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <p>Skin Setup</p>
+        <input type="hidden" id="base" name="base" value="1">
+        <div class="col s4">
+          <div class="image active">
+            <img src="https://cp.5centscdn.net/templates/cdnneon/players/5centscdn/assets/01.png" alt="Skin 1">
+          </div>
+        </div>
+        <div class="col s4">
+          <div class="image">
+            <img src="https://cp.5centscdn.net/templates/cdnneon/players/5centscdn/assets/02.png" alt="Skin 2">
+          </div>
+        </div>
+        <div class="col s4">
+          <div class="image">
+            <img src="https://cp.5centscdn.net/templates/cdnneon/players/5centscdn/assets/03.png" alt="Skin 3">
+          </div>
+        </div>
+        <div class="col s4">
+          <div class="image">
+            <img src="https://cp.5centscdn.net/templates/cdnneon/players/5centscdn/assets/04.png" alt="Skin 4">
+          </div>
+        </div>
+        <div class="col s4">
+          <div class="image">
+            <img src="https://cp.5centscdn.net/templates/cdnneon/players/5centscdn/assets/05.png" alt="Skin 5">
+          </div>
+        </div>
+      </div>
+      <div class="row colors">
+        <p>Color Setup</p>
+        <div class="col s6">
+          <label for="primaryColor">Primary Color</label>
+          <input type="color" id="primaryColor" name="meta[primaryColor]" value="" style="display: none;">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s6">
+          <label for="secondaryColor">Secondary Color</label>
+          <input type="color" id="secondaryColor" name="meta[secondaryColor]" value="" style="display: none;">
+        </div>
+      </div>
+      <div class="row">
+        <p>Logo / Branding Setup</p>
+        <div class="col s6">
+          <div class="file-field input-field">
+            <input class="file-path validate" type="text">
+            <div class="btn btn-small">
+              <span>Logo</span>
+              <input type="file" onchange="showResult(this.files[0], 'logofile');" accept="image/*">
+              <input type="hidden" id="logofile" name="meta[logo][file]" value="">
+            </div>
+          </div>
+        </div>
+              </div>
+      <div class="row">
+        <div class="col s6">
+          <div class="input-field">
+            <label for="logourl" class="">Logo URL</label>
+            <input type="text" id="logourl" name="meta[logo][url]" value="">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s2">
+          <label>Logo Position</label>
+        </div>
+        <div class="col s12">
+          <input type="radio" id="logopos-tl" name="meta[logo][position]" value="top-left" >
+          <label for="logopos-tl">Top Left</label>
+
+          <input type="radio" id="logopos-tr" name="meta[logo][position]" value="top-right" >
+          <label for="logopos-tr">Top Right</label>
+
+          <input type="radio" id="logopos-bl" name="meta[logo][position]" value="bottom-left" >
+          <label for="logopos-bl">Bottom Left</label>
+
+          <input type="radio" id="logopos-br" name="meta[logo][position]" value="bottom-right" >
+          <label for="logopos-br">Bottom Right</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s2">
+          <label>Logo Width x Height</label>
+          <div class="input-field">
+            <input type="number" name="meta[logo][width]" value="" style="width: 33%;">
+            &nbsp;X&nbsp;
+            <input type="number" name="meta[logo][height]" value="" style="width: 33%;">
+          </div>
+        </div>
+        <div class="col s2">
+          <label>Logo Offset H x V</label>
+          <div class="input-field">
+            <input type="number" name="meta[logo][offsetH]" value="" style="width: 33%;">
+            &nbsp;X&nbsp;
+            <input type="number" name="meta[logo][offsetV]" value="" style="width: 33%;">
+          </div>
+        </div>
+        <div class="col s2">
+          <label>Logo Padding</label>
+          <div class="input-field">
+            <input type="number" name="meta[logo][padding]" value="" style="width: 60%;">
+          </div>
+        </div>
+        <div class="col s2">
+          <label>Logo Opacity</label>
+          <div class="input-field">
+            <input type="number" step="0.01" name="meta[logo][opacity]" value="" style="width: 60%;" min="0" max="1">
+          </div>
+        </div>
+        <div class="col s2">
+          <label>Logo FadeDelay</label>
+          <div class="input-field">
+            <input type="number" step="1000" name="meta[logo][fadeDelay]" value="" style="width: 60%;" min="0" max="30000">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s4">
+          <input type="checkbox" id="hideOnReady" name="meta[logo][hideOnReady]" value="1" >
+          <label for="hideOnReady">Logo HideOnReady</label>
+        </div>
+      </div>
+      <div class="row">
+        <p>Poster Setup</p>
+        <div class="col s6">
+          <div class="file-field input-field">
+            <input class="file-path validate" type="text">
+            <div class="btn btn-small">
+              <span>Poster</span>
+              <input type="file" onchange="showResult(this.files[0], 'poster');" accept="image/*">
+              <input type="hidden" id="poster" name="meta[poster]" value="">
+            </div>
+          </div>
+        </div>
+              </div>
+      <div class="row">
+        <p>Ads Setup</p>
+        <div class="col s6">
+          <label style="line-height: 35px;">Google IMA Ads</label>
+          <p class="switch" style="display: inline;float:right;margin-top: unset;">
+            <label>
+              <input type="checkbox" id="imaAdToggle" class="ad_option" name="meta[imaAds]" value="1" >
+              <span class="lever"></span>
+            </label>
+          </p>
+        </div>
+        <div class="col s6">
+          <label style="line-height: 35px;">Google DAI Ads</label>
+          <p class="switch" style="display: inline;float:right;margin-top: unset;">
+            <label>
+              <input type="checkbox" id="daiAdToggle" class="ad_option" name="meta[daiAd]" value="1" >
+              <span class="lever"></span>
+            </label>
+          </p>
+        </div>
+        <div class="col s6">
+          <label style="line-height: 35px;">VAST Ads</label>
+          <p class="switch" style="display: inline;float:right;margin-top: unset;">
+            <label>
+              <input type="checkbox" id="vastAdToggle" class="ad_option" name="meta[vastAd]" value="1" >
+              <span class="lever"></span>
+            </label>
+          </p>
+        </div>
+        <!-- <div class="col s6">
+          <label style="line-height: 35px;">VAST Ads</label>
+          <p class="switch" style="display: inline;float:right;margin-top: unset;">
+            <label>
+              <input type="checkbox" id="vastAds" class="ad_option" name="meta[vastAds]" value="1" >
+              <span class="lever"></span>
+            </label>
+          </p>
+        </div> -->
+
+        <div class="col s12" id="imaAdToggleOptions" style="display: none;">
+          <p>IMA Ads</p>
+          <div class="row" >
+            <div class="col s6">
+              <label style="line-height: 35px;">Ad Tag Url</label>
+                <label>
+                  <input type="text" id="adTagUrl" name="meta[adTagUrl]">
+                </label>
+            </div>
+          </div>
+        </div>
+        <div class="col s12" id="daiAdToggleOptions" style="display: none;">
+          <p>DAI Ad Type</p>
+          <div class="col s12">
+            <input type="radio" id="dai-live" name="meta[logo][position]" value="dai-live" >
+            <label for="dai-live">Live</label>
+
+            <input type="radio" id="dai-vod" name="meta[logo][position]" value="dai-vod" >
+            <label for="dai-vod">VoD</label>
+          </div>
+          <div class="col s12">
+            <p>Stream parameters</p>
+            <div id="live">
+              <div class="col s6">
+                <label style="line-height: 35px;">Asset key</label>
+                  <label>
+                    <input type="text" id="infoDescription" name="meta[dai][assetKey]">
+                  </label>
+              </div>
+            </div>
+            <div id="vod">
+              <div class="col s6">
+                <label style="line-height: 35px;">Source Id</label>
+                  <label>
+                    <input type="text" id="source_id" name="meta[dai][source_id]">
+                  </label>
+              </div>
+              <div class="col s6">
+                <label style="line-height: 35px;">Video Id</label>
+                  <label>
+                    <input type="text" id="video_id" name="meta[dai][video_id]">
+                  </label>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col s12" id="vastAdToggleOptions" style="display: none;">
+          <p>VAST Ads</p>
+          <div class="row" >
+            <div class="col s6">
+              <label style="line-height: 35px;">Ad Tag Url</label>
+                <label>
+                  <input type="text" id="adTagUrl" name="meta[adTagUrl]">
+                </label>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+      </div>
+      <div class="row">
+        <p>Related Video</p>
+        <div class="col s6">
+          <div class="file-field input-field">
+            <input class="file-path validate" type="text">
+            <div class="btn btn-small">
+              <span>Poster</span>
+              <input type="file" onchange="showResult(this.files[0], 'poster');" accept="image/*">
+              <input type="hidden" id="relatedVideos" name="meta[poster]" value="">
+            </div>
+          </div>
+        </div>
+              </div>
+      <div class="row  formaction">
+        <div class="col s12">
+          <div class="divider"></div>
+        </div>
+     </div>
+
+    <div class="row  formaction">
+      <div class="col s10 offset-s1">
+        <div class="section right-align">
+          <button type="submit" class="btn btn-small">Save</button>
+        </div>
+      </div>
+    </div>
+
+      </form>
+    </div>
+    <div class="col s6" id="skindiv">
+      <iframe id="skin" src="http://localhost/5player/player-5cents/setup_plugin/public/skin1.html" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="" style="width:40rem;height:22.5rem;margin-left:4rem;"></iframe>
+    </div>
+  </div>
+</div>
+
+
+
+  <style>
+    div.image {
+      opacity: 0.8;
+    }
+    div.image.active {
+      opacity: 1;
+      transform: scale(1.05);
+    }
+    div.image img {
+      width:  100%;
+      cursor: pointer;
+    }
+    .sp-replacer {
+      float: right;
+    }
+    div.colors label {
+      line-height: 35px;
+    }
+    .input-field label {
+      left:  unset;
+    }
+    i {
+      cursor:  pointer;
+    }
+    #skindiv {
+      position: fixed;
+      top: 30%;
+      left: 58%;
+      width: auto;
+    }
+  </style>
+
+
+
+
+<script type="text/javascript">
+let logoShown = false;
+let skinid = 1;
+let pip = $('#showpip').prop('checked') ? 1 : 0;
+
+
+
+
+const fileDataURL = file => new Promise((resolve,reject) => {
+  let fr = new FileReader();
+  fr.onload = () => resolve(fr.result);
+  fr.onerror = reject;
+  fr.readAsDataURL(file)
+});
+
+function showResult(file, target) {
+  fileDataURL(file)
+  .then(data => {
+    document.getElementById(target).value = data;
+    document.getElementById(target+'img').src = data;
+  })
+  .catch(err => console.log(err));
+}
+
+  $(document).ready(function () {
+    $('input[type="color"]').each(function (i, e) {
+      $(e).spectrum({
+        color: $(e).val(),
+        showInput: true,
+        showInitial: true,
+        preferredFormat: 'hex',
+      });
+    });
+    $('div.image > img').on('click', function () {
+      $('div.image.active').removeClass('active');
+      $(this).parent('div').addClass('active');
+
+      let skinid = $(this).attr('alt').replace(/\D+/, '');
+      let pip = $('#showpip').prop('checked') ? 1 : 0;
+      if (!isNaN(skinid)) {
+        $('#base').val(skinid);
+        $('#skin').attr('src', `http://localhost/5player/player-5cents/setup_plugin/public/skin${skinid}.html?pip=${pip}&poster=${poster}`);
+       redrawiFrame();
+      }
+    });
+    $('#primaryColor,#secondaryColor').on('change', function () {
+      // redrawiFrame();
+    });
+    $('input[name^="meta"]').on('change', function () {
+      // console.log(this);
+      // if (!isNaN(skinid)) {
+      //   $('#base').val(skinid);
+      //   $('#skin').attr('src', `http://localhost/5player/player-5cents/setup_plugin/public/skin${skinid}.html?pip=${pip}&poster=${poster}`);
+      // }
+      redrawiFrame();
+    });
+
+  });
+
+  function redrawiFrame() {
+    let skinid = $('div.image.active > img').attr('alt').replace(/\D+/, '');
+    if (!isNaN(skinid)) {
+      skinid = parseInt(skinid);
+
+      let pColor  = $('#primaryColor').val();
+      let pColorE = encodeURIComponent(pColor);
+
+      let sColor  = $('#secondaryColor').val();
+      let sColorE = encodeURIComponent(sColor);
+
+      let d = document.getElementById('skin').contentDocument;
+
+      let r = d.querySelector(".vjs-5centsCDN-skin");
+
+      let pip = d.querySelector(".vjs-picture-in-picture-control");
+      if (pip && pip.style) pip.style.display = $('#showpip').prop('checked') ? 'block' : 'none';
+
+      let cv = d.querySelector(".vjs-cv-control");
+      if (cv && cv.style) cv.style.display = $('#showcv').prop('checked') ? 'block' : 'none';
+
+       // autoplay
+       $('#autoplay').prop('checked') ?  $('#muted').prop('checked', true) : '' ;
+
+      r.style.setProperty("--vjs-5centsCDN-skin--primary", pColor);
+      r.style.setProperty("--vjs-5centsCDN-skin--secondary", sColor);
+
+      r.style.setProperty("--vjs-5centsCDN-skin--mainplayerhover", `url("./assets/main-player-hover.svg?fill=${pColorE}")`);
+
+      if (skinid == 4) {
+        r.style.setProperty(`--vjs-5centsCDN-skin--play`, `url("./assets/play.svg?stroke=${pColorE}")`);
+        r.style.setProperty(`--vjs-5centsCDN-skin--pause`, `url("./assets/pause.svg?stroke=${pColorE}")`);
+        r.style.setProperty(`--vjs-5centsCDN-skin--replay`, `url("./assets/replay.svg?stroke=${pColorE}")`);
+      }
+
+      if (skinid == 5) {
+        r.style.setProperty(`--vjs-5centsCDN-skin--mainplayer`, `url("./assets/main-player.svg?stroke=${pColorE}")`);
+      }
+
+      if ($('#logofile').val() && !logoShown) {
+        // logoShown = true;
+        setTimeout(function () {
+          let logo = {};
+          logo.image = $('#logofile').val();
+          logo.fadeDelay = null;
+          logo.hideOnReady = false;
+          if ($('#logourl').val()) {
+            logo.url = $('#logourl').val();
+          }
+          if ($('input[name="meta[logo][position]"]:checked').val()) {
+            logo.position = $('input[name="meta[logo][position]"]:checked').val();
+          }
+          if ($('input[name="meta[logo][offsetH]"]').val()) {
+            logo.offsetH = $('input[name="meta[logo][offsetH]"]').val();
+          }
+          if ($('input[name="meta[logo][offsetV]"]').val()) {
+            logo.offsetV = $('input[name="meta[logo][offsetV]"]').val();
+          }
+          if ($('input[name="meta[logo][width]"]').val()) {
+            logo.width = $('input[name="meta[logo][width]"]').val();
+          }
+          if ($('input[name="meta[logo][height]"]').val()) {
+            logo.height = $('input[name="meta[logo][height]"]').val();
+          }
+          if ($('input[name="meta[logo][padding]"]').val()) {
+            logo.padding = $('input[name="meta[logo][padding]"]').val();
+          }
+          if ($('input[name="meta[logo][opacity]"]').val()) {
+            logo.opacity = $('input[name="meta[logo][opacity]"]').val();
+          }
+          if ($('input[name="meta[logo][hideOnReady]"]:checked').val()) {
+            logo.hideOnReady = true;
+          }
+          console.log(logo);
+          document.getElementById("skin").contentWindow.player.playerInstance.logo(logo);
+        }, 1500);
+      }
+    }
+  }
+</script>
+
+
+
+  <!-- Test -->
+
+
+  </section>
+  <!-- /Main Content -->
+
+
+
+  </div>
+  <script src="/templates/cdnneon/assets/js/gsap/TweenMax.min.js"></script>
+  <script src="/templates/cdnneon/assets/js/bootstrap.js"></script>
+
+  <!-- jQuery RAF (improved animation performance) -->
+  <script src="/templates/cdnneon/assets/jqueryRAF/jquery.requestAnimationFrame.min.js"></script>
+
+  <!-- neon theme js -->
+  <script src="/templates/cdnneon/assets/js/joinable.js"></script>
+  <script src="/templates/cdnneon/assets/js/resizeable.js"></script>
+  <script src="/templates/cdnneon/assets/materialize/js/materialize.min.js"></script>
+
+  <!-- nanoScroller   -->
+  <script src="/templates/cdnneon/assets/nanoScroller/jquery.nanoscroller.min.js"></script>
+
+  <!-- ParsleyJS -->
+  <script src="/templates/cdnneon/assets/parsley/parsley.min.js"></script>
+  <!-- momentjs -->
+  <script src="/templates/cdnneon/assets/momentjs/moment.min.js"></script>
+  <!-- Sortable -->
+  <script src="/templates/cdnneon/assets/sortable/Sortable.min.js"></script>
+  <!-- growl -->
+  <script src="/templates/cdnneon/assets/growl/js/jquery.growl.js"></script>
+
+    <script src="/templates/cdnneon/assets/spectrum/spectrum.js"></script>
+
+  <!-- VideoJS -->
+  <!-- <script src="https://player.cloudcdnhosting.com/videojs/7.7.6/video.min.js" crossorigin="anonymous"></script>
+  <script src="https://player.cloudcdnhosting.com/videojs/videojs-contrib-quality-levels.min.js" crossorigin="anonymous"></script>
+  <script src="https://player.cloudcdnhosting.com/videojs/videojs-hls-quality-selector.min.js" crossorigin="anonymous"></script>
+  <script src="https://player.cloudcdnhosting.com/videojs/videojs.hotkeys.min.js" crossorigin="anonymous"></script> -->
+
+  <!-- NProgress -->
+  <script src="/templates/cdnneon/assets/nprogress/nprogress.js"></script>
+
+  <!-- Main-->
+  <script src="/templates/cdnneon/assets/_con/js/_con.js"></script>
+  <script src="/templates/cdnneon/assets/js/neon-api.js"></script>
+  <script src="/templates/cdnneon/assets/js/neon-custom.js?ver=f372d09082beb5f9ef2074036ea11c95"></script>
+
+  <!-- <script src="//app.helphero.co/embed/vaBdd0pRc30"></script> -->
+
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $(".sidebar-collapse").click(function() {
+        if($(".page-container").hasClass("sidebar-collapsed")) {
+           $('.lbltxt').hide();
+        } else {
+           $('.lbltxt').show();
+        }
+      });
+    });
+
+    /**********************************/
+    const contextMenuToggle = document.getElementById('contextMenu');
+    const contextMenuOptons = document.getElementById('contextMenuOptons');
+    const videoInfoToggle = document.getElementById('videoInfo');
+    const videoInfoOptons = document.getElementById('videoInfoOptons');
+
+
+    contextMenuToggle.addEventListener('change', function() {
+      if (this.checked) {
+        contextMenuOptons.style.display='block';
+      } else {
+        contextMenuOptons.style.display='none';
+      }
+    });
+    videoInfoToggle.addEventListener('change', function() {
+      if (this.checked) {
+        videoInfoOptons.style.display='block';
+      } else {
+        videoInfoOptons.style.display='none';
+      }
+    });
+
+    // var adTagUrl = document.getElementById('adTagUrl');
+    // document.getElementById('imaAdToggle').addEventListener('change', function() {
+    //   if (this.checked) {
+    //     adTagUrl.style.display='block';
+    //   } else {
+    //     adTagUrl.style.display='none';
+    //   }
+    // });
+
+
+    const checkboxes = document.querySelectorAll('.ad_option');
+
+    checkboxes.forEach((checkbox) => {
+      checkbox.addEventListener('change', function () {
+
+        checkboxes.forEach((cb) => {
+
+          if (cb !== this) {
+            cb.checked = false;
+          }
+          document.getElementById(cb.id+'Options').style.display='none';
+          if (this.checked) {
+           document.getElementById(this.id+'Options').style.display='block';
+          }
+
+        });
+      });
+    });
+
+
+
+    const radioButtons = document.querySelectorAll('.option');
+     radioButtons.forEach((radioButton) => {
+       radioButton.addEventListener('change', function () {
+         radioButtons.forEach((rb) => {
+           const formContainer = rb.parentNode.nextElementSibling;
+           if (rb.checked) {
+             formContainer.classList.add('active');
+           } else {
+             formContainer.classList.remove('active');
+           }
+         });
+       });
+     });
+
+
+     // const radioButtons = document.querySelectorAll('.dai-options');
+     //  radioButtons.forEach((radioButton) => {
+     //    radioButton.addEventListener('change', function () {
+     //      radioButtons.forEach((rb) => {
+     //        const formContainer = rb.parentNode.nextElementSibling;
+     //        if (rb.checked) {
+     //          formContainer.classList.add('active');
+     //        } else {
+     //          formContainer.classList.remove('active');
+     //        }
+     //      });
+     //    });
+     //  });
+
+    //
+    // function openCity(evt, cityName) {
+    //   var i, tabcontent, tablinks;
+    //   tabcontent = document.getElementsByClassName("tabcontent");
+    //   for (i = 0; i < tabcontent.length; i++) {
+    //     tabcontent[i].style.display = "none";
+    //   }
+    //   tablinks = document.getElementsByClassName("tablinks");
+    //   for (i = 0; i < tablinks.length; i++) {
+    //     tablinks[i].className = tablinks[i].className.replace(" active", "");
+    //   }
+    //   document.getElementById(cityName).style.display = "block";
+    //   evt.currentTarget.className += " active";
+    // }
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="text/javascript">
+
+  </script>
 
   </body>
 </html>

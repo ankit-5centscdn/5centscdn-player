@@ -8,37 +8,41 @@
 
 <!-- <link href="http://localhost/5player/player-5cents/5centscdn/bundle.css" rel="stylesheet" type="text/css" /> -->
 <link href="./videojs.css" rel="stylesheet" type="text/css" />
-<link href="../plugins/ima/ima.min.css" rel="stylesheet" type="text/css" />
-
 <link rel="stylesheet" href="../skins/skin5/main.css" id="player_skin" />
 
+<link href="../plugins/logo/videojs-logo.min.css" rel="stylesheet" type="text/css" />
 
-
-
-
-<!--Load Ima SDK Loader -->
-<script src="//imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
 
 <script src="./video.min.js"></script>
+<script src="../plugins/logo/videojs-logo.min.js"></script>
 <!-- ima -->
+<link href="../plugins/ima/ima.min.css" rel="stylesheet" type="text/css" />
+<script src="//imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
 <script src="../plugins/ima/videojs.ima.min.js"></script>
 <script src="../plugins/videojs-contrib-ads.min.js"></script>
 <!-- //ima -->
-<script src="../plugins/vast.vpaid.min.js"></script>
-<script src="./nuevo.min.js"></script>
+
+
+<!-- <script src="../plugins/vast.vpaid.min.js"></script> -->
+
+<script src="./nuevo.min.js?v=384547"></script>
 <script src="../plugins/videojs.hotkeys.min.js"></script>
 <script  src="../plugins/videojs.offline.js"></script>
 <script src="../plugins/videojs.thumbnails.js"></script>
 <script src="../plugins/videojs-chromecast.min.js"></script>
 <script src="../plugins/videojs.airplay.js"></script>
+
 <!-- ads -->
-<!-- <script src="../plugins/videojs.dai.js"></script> -->
+<!-- dai -->
+<script src="//imasdk.googleapis.com/js/sdkloader/ima3_dai.js"></script>
+<script src="../plugins/videojs.dai.js"></script>
+<!-- // dai -->
 <script src="../plugins/vastpro.js"></script>
 </head>
 
 <body>
 
-	<video id="my-video" class="video-js vjs-5centsCDN-skin vjs-big-play-centered">
+	<video id="my-video" class="video-js vjs-5centsCDN-skin vjs-big-play-centered ">
 		<!-- <track kind="chapters" src="../assets/chapter.vtt" srclang="en"> -->
 		<p class="vjs-no-js">
 			To view this video please enable JavaScript, and consider upgrading to a
@@ -46,6 +50,9 @@
 			<a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
 		</p>
 	</video>
+	<script  src="../src/analytic.js"></script>
+  <link rel="stylesheet" href="../src/viewers/plugin.css">
+	<script  src="../src/viewers/plugin.js"></script>
 	<script  src="../src/player.js"></script>
 	<script  src="../src/vjs.config.js"></script>
 

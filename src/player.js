@@ -2,6 +2,14 @@ const defaults = {
     // fit: true,
     responsive: true,
     controls: true,
+    liveui:true,
+};
+
+const nuevodefaults = {
+    nuevoSetting: {
+      contextUrl: '#',
+      contextText: '5centsCDN Player 1.0.0 (Beta)'
+    }
 };
 const domain = 'https://collector-videoplayer.5centscdn.net';
 
@@ -49,7 +57,8 @@ class FiveCentsCDNPlayer {
         //     .catch(error => {
         //         console.error('[FiveCentsCDNPlayer] There has been a problem with your play request:', error);
         //     });
-				this.initPlayer();
+
+          this.initPlayer();
     }
 
     initPlayer() {
@@ -65,7 +74,6 @@ class FiveCentsCDNPlayer {
 
 				// player init
         this.playerInstance = videojs(this.id, videojs.obj.merge(defaults, this.options), this.callback);
-
 				// nuevo init.
 				if (this.nuevo.nuevoSetting) this.playerInstance.nuevo(this.nuevo.nuevoSetting); else this.playerInstance.nuevo();
 				if (this.nuevo.thumbnails) this.playerInstance.thumbnails(this.nuevo.thumbnails);
@@ -127,6 +135,19 @@ class FiveCentsCDNPlayer {
 				}
 
 
+        // DAI
+        // this.playerInstance.dai({ // for VoD
+        //    // fallback: 'https://cdnzone.nuevodevel.com/video/hls/fallback/playlist.m3u8',
+        //    source_id: '2548831',
+        //    video_id: 'tears-of-steel'
+        // });
+
+        // this.playerInstance.dai({ // for Live
+        //    fallback: 'https://cdnzone.nuevodevel.com/video/hls/fallback/playlist.m3u8',
+        //    assetKey: "sN_IYUG8STe1ZzhIIE_ksA" //c-rArva4ShKVIAkNfy6HUQ
+        // });
+
+
 				// VASTPro
         if (this.nuevo.ads.vast_pro_option) {
           this.playerInstance.vastAds (this.nuevo.ads.vast_pro_option);
@@ -147,6 +168,44 @@ class FiveCentsCDNPlayer {
 				// 		 {closeButton:true}
 				// 	)
 				// }
+
+
+
+        this.playerInstance.analytic({
+            domain: domain,
+            hash_id: this.options.hash_id,
+            title: this.options.title,
+            tags: this.options.tags,
+            url: this.options.sources[0].src,
+            start_time: this.playerStartTime,
+        });
+
+
+        if (this.options.show_cv) {
+          this.playerInstance.concurrentViewers({
+              domain: domain,
+              hash_id: this.options.hash_id
+          });
+      }
+
+
+
+
+
+      if (this.nuevo.nuevoSetting.contextMenu != 'default' && this.nuevo.nuevoSetting.contextMenu != false) {
+        function handleRightClick(event) {
+      	  event.preventDefault();
+      		let contextMenu = document.querySelector('.vjs-context-menu')
+      		contextMenu.querySelector('.cplay').remove();
+      		contextMenu.querySelector('.cmute').remove();
+      		contextMenu.querySelector('.cfull').remove();
+      		contextMenu.querySelector('.curi').remove();
+      		document.removeEventListener('contextmenu', handleRightClick)
+      	}
+      	document.addEventListener('contextmenu', handleRightClick);
+      }
+
+
 
     }
 
